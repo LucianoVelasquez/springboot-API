@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
         type = SecuritySchemeType.HTTP,
         bearerFormat = "JWT",
         scheme = "bearer",
-        description = "El Token lo podes obtener en `http://localhost:3000/`"
+        description = "You can obtain the Token at `https://login-swagger-api.vercel.app/`"
 )
 public class OpenAPI30Configuration {
 }

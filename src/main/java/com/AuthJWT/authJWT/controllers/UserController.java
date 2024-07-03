@@ -52,7 +52,8 @@ public class UserController {
             @ApiResponse(responseCode = "400", description = "body incorrect",
                     content = @Content(mediaType = "application/json",schema = @Schema(implementation = String.class)))
     })
-    @Operation(summary = "Create user", description = "This can be used by everyone", tags = { "user" })
+    @Operation(summary = "Create user", description = "This can be used by everyone, * The username must be between 3 and 20 characters " +
+            " * Password must be at least 8 characters", tags = { "user" })
     public ResponseEntity<?> create(@Valid @RequestBody UserCreateDTO userDTO, BindingResult result){
 
         if(result.hasFieldErrors()){
