@@ -45,6 +45,7 @@ public class SpringSecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return  http.authorizeHttpRequests((authz) -> authz
                         .requestMatchers(HttpMethod.POST,"/api/users").permitAll()
+                        .requestMatchers(HttpMethod.GET,"/api/products/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         .requestMatchers("/v3/api-docs/swagger-config").permitAll()
