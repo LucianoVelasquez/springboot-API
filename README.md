@@ -51,6 +51,7 @@ Dillinger uses a number of open source projects to work properly:
 - [JWT] - Estándar para la creación de tokens de acceso de forma segura.
 - [Spring Security] - Framework para la gestión de seguridad en aplicaciones Spring.
 - [Spring Validation] - Biblioteca para la validación de datos en aplicaciones Spring.
+- [TypeScript] - Superset de JavaScript que añade tipos estáticos.
 - [Next.js] - Framework de React para la construcción de aplicaciones web estáticas y dinámicas.
 - [React] - Biblioteca de JavaScript para la construcción de interfaces de usuario.
 - [Tailwind CSS] - Framework de CSS para un diseño web rápido y adaptable.
